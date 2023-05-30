@@ -1,0 +1,174 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: serif;
+  line-height: 1.6;
+}
+
+header {
+  background-image: linear-gradient(rgba(50, 200, 123, 0.2), rgba(3, 69, 200, 0.4));
+}
+
+
+.header-background-video {
+  width: 100vw;
+  min-height: 100dvh;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.head-navigation {
+  font-family: sans-serif;
+  position: fixed;
+  background-color: black;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-family: serif;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.head-navigation__menu {
+  margin-left: auto;
+  text-transform: uppercase;
+}
+
+.head-navigation__menu>li {
+  list-style: none;
+  display: inline;
+}
+
+
+.head-navigation__menu__item__link {
+  color: white;
+  padding: 1em;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: .1ch;
+}
+
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.hero-container__contents {
+  font-family: serif;
+  text-align: center;
+}
+
+.hero-container__contents>h1 {
+  text-shadow: 1px 1px 8px rgba(3, 69, 42, 0.4);
+  line-height: 1;
+  font-size: 10rem;
+  margin-bottom: 3rem;
+}
+
+.hero-container__contents>h1>span {
+  transform: rotate(-8deg);
+  font-size: .5em;
+  font-weight: 100;
+  font-style: oblique;
+  display: block;
+}
+
+
+
+.hero-container__contents>h3 {
+  margin: 0 auto;
+  max-width: 70%;
+  font-weight: 100;
+  font-size: 2rem;
+  margin-bottom: 6rem;
+  line-height: 1.5;
+}
+
+.button {
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1.3rem 4.8rem;
+}
+
+.inverted {
+  color: white;
+  background-color: black;
+}
+
+section {
+  padding: 6rem;
+  color: black;
+  text-align: center;
+}
+
+
+.blurb {
+  margin-bottom: 3rem;
+}
+
+.blurb>h2 {
+  font-size: 4rem;
+}
+
+.blurb>h4 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.blurb>p {
+  font-size: 1.4rem;
+}
+
+section.intro {}
+
+section.secondary {
+  color: white;
+  background-color: black;
+}
+
+section.image {
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.4)),
+    url("https://picsum.photos/1200/800?random=43");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.footer-secondary {
+  padding: 2em;
+  background: black;
+  color: white;
+}
